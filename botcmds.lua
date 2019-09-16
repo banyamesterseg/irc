@@ -117,7 +117,7 @@ irc.register_bot_command("help", {
 })
 
 
-irc.register_bot_command("whereis", {
+irc.register_bot_command("locate", {
 	params = "<player>",
 	description = "Tell the location of <player>",
 	func = function(_, args)
