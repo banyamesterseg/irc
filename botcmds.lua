@@ -117,16 +117,6 @@ irc.register_bot_command("help", {
 })
 
 
-irc.register_bot_command("list", {
-	params = "",
-	description = "List available commands.",
-	func = function()
-		return false, "The `list` command has been merged into `help`."
-				.." Use `help` with no arguments to get a list."
-	end
-})
-
-
 irc.register_bot_command("whereis", {
 	params = "<player>",
 	description = "Tell the location of <player>",
@@ -161,7 +151,7 @@ irc.register_bot_command("uptime", {
 })
 
 
-irc.register_bot_command("players", {
+irc.register_bot_command("list", {
 	description = "List the players on the server",
 	func = function()
 		local players = minetest.get_connected_players()
